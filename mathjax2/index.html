@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@jupyterlab/mathjax2</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">JupyterLab</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> @jupyterlab/mathjax2</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><strong><a href="#installation">Installation</a></strong> |
+					<strong><a href="http://jupyterlab.readthedocs.io">Documentation</a></strong> |
+					<strong><a href="#contributing">Contributing</a></strong> |
+					<strong><a href="#license">License</a></strong> |
+					<strong><a href="#team">Team</a></strong> |
+				<strong><a href="#getting-help">Getting help</a></strong> |</p>
+				<h1 id="jupyterlab"><a href="http://jupyterlab.github.io/jupyterlab/">JupyterLab</a></h1>
+				<p><a href="https://badge.fury.io/py/jupyterlab"><img src="https://badge.fury.io/py/jupyterlab.svg" alt="PyPI version"></a>
+					<a href="https://travis-ci.org/jupyterlab/jupyterlab"><img src="https://travis-ci.org/jupyterlab/jupyterlab.svg?branch=master" alt="Build Status"></a>
+					<a href="http://jupyterlab.readthedocs.io/en/stable/"><img src="https://readthedocs.org/projects/jupyterlab/badge/?version=stable" alt="Documentation Status"></a>
+					<a href="https://groups.google.com/forum/#!forum/jupyter"><img src="https://img.shields.io/badge/-Google%20Group-lightgrey.svg" alt="Google Group"></a>
+					<a href="https://gitter.im/jupyterlab/jupyterlab"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg" alt="Join the Gitter Chat"></a>
+				<a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/0b0bb42e3e43ee2ebe1c0424d3a88a9b9edcd055?urlpath=lab%2Ftree%2Fdemo%2FLorenz.ipynb"><img src="https://mybinder.org/badge.svg" alt="Binder"></a></p>
+				<p>An extensible environment for interactive and reproducible computing, based on the
+				Jupyter Notebook and Architecture. <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Currently ready for users.</a></p>
+				<p><a href="http://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> is the next-generation user interface for <a href="https://jupyter.org">Project Jupyter</a>. It offers
+					all the familiar building blocks of the classic Jupyter Notebook (notebook,
+					terminal, text editor, file browser, rich outputs, etc.) in a flexible and
+					powerful user interface.
+				Eventually, JupyterLab will replace the classic Jupyter Notebook.</p>
+				<p>JupyterLab can be extended using extensions that are <a href="https://www.npmjs.com/">npm</a> packages
+				and use our public APIs. You can search for the GitHub topic <a href="https://github.com/topics/jupyterlab-extension">jupyterlab-extension</a> to find extensions. To learn more about extensions, see our <a href="https://jupyterlab.readthedocs.io/en/latest/user/extensions.html">user documentation</a>.</p>
+				<p>The current JupyterLab releases are suitable for general
+					usage. For JupyterLab extension developers, the extension APIs will continue to
+				evolve.</p>
+				<p>Read the latest version of our documentation on <a href="http://jupyterlab.readthedocs.io/en/latest/">ReadTheDocs</a>.</p>
+				<hr>
+				<h2 id="getting-started">Getting started</h2>
+				<h3 id="installation">Installation</h3>
+				<p>You can <a href="http://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">install</a> JupyterLab using <code>conda</code>, <code>pip</code>, or <code>pipenv</code>. We recommend using conda if you do not have a preference.</p>
+				<p>Instructions on how to install the project from the git sources are available in our <a href="CONTRIBUTING.md">contributor documentation</a>.</p>
+				<h4 id="conda">conda</h4>
+				<p>Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. It can package and distribute software for any language, and by default uses the Anaconda repository managed by Anaconda, Inc. If you wish to use conda and do not have it, <a href="https://conda.io/docs/user-guide/install/index.html">see the conda installation instructions</a>.</p>
+				<p>If you use <a href="https://anaconda.org/conda-forge/jupyterlab"><code>conda</code></a>, you can install as:</p>
+				<pre><code class="language-bash">conda install -c conda-forge jupyterlab</code></pre>
+				<h4 id="pip">pip</h4>
+				<p>pip is a package management system for installing and updating Python packages. pip comes with Python, so you get pip simply by installing Python. On Ubuntu and Fedora Linux, you can simply use your system package manager to install the <code>python3-pip</code> package. <a href="https://docs.python-guide.org/starting/installation/"><em>The Hitchhiker&#39;s Guide to Python</em> provides some guidance on how to install Python on your system if it isn&#39;t already</a>; you can also <a href="https://www.python.org/getit/">install Python directly from python.org</a>. You might want to <a href="https://pip.pypa.io/en/stable/installing/">upgrade pip</a> before using it to install other programs.</p>
+				<p>JupyterLab uses Python, and as of July 2018 JupyterLab can use either Python2 or Python3. However, it&#39;s recommended that you install JupyterLab using Python3, even when running Python2 code - and there are different ways to do that. Therefore:</p>
+				<ol>
+					<li>If you are using Windows with Python version 3.3 or higher, use the <a href="https://docs.python.org/3/using/windows.html?highlight=shebang#python-launcher-for-windows">Python Launcher for Windows</a> to use <code>pip</code> with Python version 3:<pre><code class="language-bash">py -3 -m pip install jupyterlab</code></pre>
+					</li>
+					<li>If your system has a <code>python3</code> command (standard on Unix-like systems), install with:<pre><code class="language-bash">python3 -m pip install jupyterlab</code></pre>
+					</li>
+					<li>You can also just use the <code>python</code> command directly, but this will use the <em>current</em> version of Python in your environment (which may be version 2 or version 3 of Python if you have both installed):<pre><code class="language-bash">python -m pip install jupyterlab</code></pre>
+					</li>
+				</ol>
+				<p>Some systems have a <code>pip3</code> command that has the same effect as <code>python3 -m pip</code> and/or a <code>pip</code> command that has the same effect as <code>python -m pip</code>.</p>
+				<p>If you add <code>--user</code> after <code>pip install</code> you will install the files to a local user install directory (typically <code>~/.local/</code> or <code>%APPDATA%\Python</code> on Windows) instead of the system-wide directory. This can be helpful, especially if you are not allowed to write to the system-wide directory. However, if you do this, you must add the user-level <code>bin</code> directory to your <code>PATH</code> environment variable in order to launch <code>jupyter lab</code>.</p>
+				<h4 id="pipenv">pipenv</h4>
+				<p><code>Pipenv</code> is intended to provide users and developers of applications with an easy method to setup a working environment. You must have Python installed first. See the <a href="https://docs.pipenv.org/install">pipenv installation documentation</a> if you wish to use it but do not have it installed.</p>
+				<p>If you use <code>pipenv</code>, you can install it as:</p>
+				<pre><code class="language-bash">pipenv install jupyterlab
+pipenv shell</code></pre>
+				<p>or from a git checkout:</p>
+				<pre><code class="language-bash">pipenv install git+git://github.com/jupyterlab/jupyterlab.git<span class="hljs-comment">#egg=jupyterlab</span>
+pipenv shell</code></pre>
+				<p>When using <code>pipenv</code>, in order to launch <code>jupyter lab</code>, you must activate the project&#39;s virtualenv. For example, in the directory where <code>pipenv</code>&#39;s <code>Pipfile</code> and <code>Pipfile.lock</code> live (i.e., where you ran the above commands):</p>
+				<pre><code class="language-bash">pipenv shell
+jupyter lab</code></pre>
+				<h4 id="installing-with-previous-versions-of-jupyter-notebook">Installing with Previous Versions of Jupyter Notebook</h4>
+				<p>If you are using a version of Jupyter Notebook earlier than 5.3, then you must also run the following command
+				after installation to enable the JupyterLab server extension:</p>
+				<pre><code class="language-bash">jupyter serverextension <span class="hljs-built_in">enable</span> --py jupyterlab --sys-prefix</code></pre>
+				<h3 id="running">Running</h3>
+				<p>Start up JupyterLab using:</p>
+				<pre><code class="language-bash">jupyter lab</code></pre>
+				<p>JupyterLab will open automatically in your browser. See our <a href="http://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html">documentation</a> for additional details.</p>
+				<h3 id="prerequisites-and-supported-browsers">Prerequisites and Supported Browsers</h3>
+				<p>Jupyter notebook version 4.3 or later. To check the notebook version:</p>
+				<pre><code class="language-bash">jupyter notebook --version</code></pre>
+				<p>The latest versions of the following browsers are currently <em>known to work</em>:</p>
+				<ul>
+					<li>Firefox</li>
+					<li>Chrome</li>
+					<li>Safari</li>
+				</ul>
+				<p>See our <a href="http://jupyterlab.readthedocs.io/en/latest/getting_started/installation.html">documentation</a> for additional details.</p>
+				<hr>
+				<h2 id="development">Development</h2>
+				<h3 id="contributing">Contributing</h3>
+				<p>If you would like to contribute to the project, please read our <a href="CONTRIBUTING.md">contributor documentation</a>.</p>
+				<p>JupyterLab follows the Jupyter <a href="https://jupyter.readthedocs.io/en/latest/community/content-community.html">Community Guides</a>.</p>
+				<h3 id="extending-jupyterlab">Extending JupyterLab</h3>
+				<p>To start developing your own extension, see our <a href="https://jupyterlab.readthedocs.io/en/latest/developer/extension_dev.html">developers documentation</a> and <a href="http://jupyterlab.github.io/jupyterlab/index.html">API docs</a>.</p>
+				<h3 id="license">License</h3>
+				<p>We use a shared copyright model that enables all contributors to maintain the
+				copyright on their contributions. All code is licensed under the terms of the revised <a href="https://github.com/jupyterlab/jupyterlab/blob/master/LICENSE">BSD license</a>.</p>
+				<h3 id="team">Team</h3>
+				<p>JupyterLab is part of <a href="http://jupyter.org/">Project Jupyter</a> and is developed by an open community of contributors. Our maintainer team is accompanied by a much larger group of contributors to JupyterLab and Project Jupyter as a whole.</p>
+				<p>JupyterLab&#39;s current maintainers are listed in alphabetical order, with affiliation, and main areas of contribution:</p>
+				<ul>
+					<li>Chris Colbert, Project Jupyter (co-creator, application/low-level architecture,
+					technical leadership, vision, PhosphorJS)</li>
+					<li>Afshin Darian, Two Sigma (co-creator, application/high-level architecture,
+					prolific contributions throughout the code base).</li>
+					<li>Jessica Forde, Project Jupyter (demo, documentation)</li>
+					<li>Tim George, Cal Poly (UI/UX design, strategy, management, user needs analysis)</li>
+					<li>Brian Granger, Cal Poly (co-creator, strategy, vision, management, UI/UX design,
+					architecture).</li>
+					<li>Jason Grout, Bloomberg (co-creator, vision, general development).</li>
+					<li>Fernando Perez, UC Berkeley (co-creator, vision).</li>
+					<li>Ian Rose, UC Berkeley (Real-time collaboration, document architecture).</li>
+					<li>Saul Shanabrook, Quansight (general development, extensions)</li>
+					<li>Steven Silvester, JPMorgan Chase (co-creator, release management, packaging,
+					prolific contributions throughout the code base).</li>
+				</ul>
+				<p>Maintainer emeritus:</p>
+				<ul>
+					<li>Cameron Oelsen, Cal Poly (UI/UX design).</li>
+				</ul>
+				<p>This list is provided to help provide context about who we are and how our team functions.
+				If you would like to be listed, please submit a pull request with your information.</p>
+				<hr>
+				<h2 id="getting-help">Getting help</h2>
+				<p>We encourage you to ask questions on the <a href="https://groups.google.com/forum/#!forum/jupyter">mailing list</a>,
+				and you may participate in development discussions or get live help on <a href="https://gitter.im/jupyterlab/jupyterlab">Gitter</a>. Please use our <a href="https://github.com/jupyterlab/jupyterlab/issues">issues page</a> to provide feedback or submit a bug report.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/mathjaxtypesetter.html" class="tsd-kind-icon">Math<wbr>Jax<wbr>Typesetter</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
